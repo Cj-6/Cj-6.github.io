@@ -1,0 +1,51 @@
+body {
+  background-color: hsl(14, 65%, 90%);
+}
+h1 {
+  text-align: center;
+  color: #2d080a;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+}
+h2 {
+  text-align: center;
+  color: #2d080a;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container {
+  width: 850px;
+  height: auto;
+  margin: 0 auto;
+  min-height: 100%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.fishpicture {
+  margin-left: 212.5px;
+  max-width: 425px;
+  min-width: 25%;
+  height: auto;
+}
+
+.caption {
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+}
+
+.bullets {
+  padding-left: 5px;
+  padding-top: 20px;
+}
+.subBullets {
+  margin: 0% 5%;
+}
+
+.buttons {
+  text-align: center;
+
+  padding-top: 30px;
+}
