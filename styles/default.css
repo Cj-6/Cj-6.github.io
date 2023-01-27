@@ -3,6 +3,16 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+header {
+  font-size: 120%;
+  text-align: center;
+  color: #2d080a;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.nav {
+}
+
 .center {
   text-align: center;
   color: #2d080a;
