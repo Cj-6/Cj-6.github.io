@@ -1,5 +1,6 @@
 body {
-  background-color: hsl(14, 65%, 90%);
+  background-color: hsl(0, 100%, 98%);
+  background: linear-gradient(rgb(255, 255, 255), rgb(250, 119, 119));
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -48,7 +49,7 @@ header {
   text-align: center;
 }
 
-.table {
+.table1 {
   background-color: rgb(220, 220, 220);
   width: 800px;
   text-align: left;
@@ -71,6 +72,34 @@ td {
   color: rgb(255, 255, 255);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-tr:nth-child(even) {
-  background-color: rgb(240, 240, 240);
+
+.smallTB {
+  width: 30px;
+}
+.submitButton {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, orange, rgb(213, 1, 114));
+}
+.resetButton {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, orange, rgb(213, 1, 114));
+}
+.form {
+  border-collapse: collapse;
+  display: flex;
+  align-items: center;
+  background-clip: border-box;
+  background-color: white;
+  padding: 25px 25px;
+  border-radius: 10px;
+  width: 400px;
+}
+.formTitle {
+  height: 10px;
+}
+
+.pageFit {
+  height: 924px;
 }
