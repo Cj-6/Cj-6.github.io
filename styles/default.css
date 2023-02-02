@@ -1,29 +1,44 @@
+/*
+* These are the Default settings for every page -=-=-=-=-=-=-=-=-
+*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
 body {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   padding: 0;
   margin: 0;
-  background: linear-gradient(0deg, #eaeaea, #3e85ab);
-  background-color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+  background: linear-gradient(0deg, #eaeaea, #2f7098);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-
-header {
-  padding: 6px;
+.header {
+  width: auto;
+  min-width: 870px;
+  height: 60px;
+  display: block;
   font-size: 100%;
-  text-align: center;
   background-color: #3c4048;
   color: #ffffff;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-footer {
-  font-size: 12px;
-  color: #484b51;
+.inner-header {
   text-align: center;
+  height: 100%;
+  width: fit-content;
+  padding-top: 10px;
+  display: block;
+  margin: 0 auto;
 }
-
 .nav-container {
+  min-width: 870px;
   text-align: center;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -32,47 +47,63 @@ footer {
   background-color: #3c4048;
 }
 .nav {
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 105%;
-  text-decoration: none;
-  width: 100%;
-  padding: 20px;
   color: white;
 }
+.nav:active {
+  color: #b0b1b6 !important;
+}
+.nav,
+.links:hover {
+  color: #d0d2d5;
+  transition-duration: 0.2s;
+}
+footer {
+  bottom: 0;
+  margin-top: auto;
+  width: 100vw;
+  font-size: 12px;
+  color: #484b51;
+  text-align: center;
+}
+.tab {
+  margin-left: 40px;
+}
 
+/*
+* css for the main index page -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
 .center {
   text-align: center;
   color: #2d080a;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-
 .container {
   width: 850px;
   height: auto;
   margin: 0 auto;
   min-height: 100%;
 }
-
 .fishpicture {
   display: block;
   margin: 0 auto;
   width: 50%;
 }
-
 .caption {
   text-align: center;
   font-style: italic;
 }
-
 .bullets {
+  list-style: circle;
   padding-left: 5px;
   padding-top: 10px;
 }
-
-.tab {
-  margin-left: 40px;
+.bullets li {
+  list-style: square;
 }
-
 .links {
   margin-top: 30px;
   margin-left: 0px;
@@ -83,7 +114,9 @@ footer {
 
   color: rgb(0, 0, 0);
 }
-
+/*
+* css for the tables page -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
 .table1 {
   background-color: rgb(220, 220, 220);
   width: 800px;
@@ -114,7 +147,9 @@ td {
 .smallTB {
   width: 30px;
 }
-
+/*
+* css for the forms page -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
 .submitButton {
   padding: 20px;
   color: rgb(255, 255, 255);
@@ -140,7 +175,4 @@ td {
 
 .formTitle {
   height: 10px;
-}
-.pageFit {
-  height: 924px;
 }
