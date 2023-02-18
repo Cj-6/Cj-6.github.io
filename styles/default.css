@@ -7,6 +7,8 @@
   list-style: none;
   text-decoration: none;
 }
+.title {
+}
 body {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,7 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(0deg, #eaeaea, #2f7098);
+  background: linear-gradient(0deg, #eaeaea, #00abb3);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -55,9 +57,8 @@ body {
 .nav:active {
   color: #b0b1b6 !important;
 }
-.nav,
-.links:hover {
-  color: #d0d2d5;
+.nav:hover {
+  color: #cbced2;
   transition-duration: 0.2s;
 }
 footer {
@@ -68,6 +69,15 @@ footer {
   color: #484b51;
   text-align: center;
 }
+footer a {
+  text-decoration: underline;
+  color: #757a83;
+}
+footer a:hover {
+  color: #4b5056;
+  transition-duration: 0.2s;
+}
+
 .tab {
   margin-left: 40px;
 }
@@ -76,7 +86,9 @@ footer {
 * css for the main index page -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
 .center {
+  width: 850px;
   text-align: center;
+  margin: 0 auto;
   color: #2d080a;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -151,28 +163,101 @@ td {
 * css for the forms page -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 */
 .submitButton {
-  padding: 20px;
+  margin: 0 auto;
+  align-items: center;
+
+  padding: 15px;
   color: rgb(255, 255, 255);
-  background: linear-gradient(90deg, orange, rgb(213, 1, 114));
+  background: black;
 }
 
 .resetButton {
-  padding: 20px;
+  padding: 15px;
   color: rgb(255, 255, 255);
-  background: linear-gradient(90deg, orange, rgb(213, 1, 114));
+  background: black;
+}
+.formcontainer {
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 600px;
+  padding: 40px;
+  margin-top: 50px;
 }
 
 .form {
   border-collapse: collapse;
-  display: flex;
+  margin: 0 auto;
   align-items: center;
   background-clip: border-box;
   background-color: white;
   padding: 25px 25px;
-  border-radius: 10px;
   width: 400px;
 }
 
 .formTitle {
-  height: 10px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 40px;
+  height: 50px;
 }
+
+/*
+* css for the crappy page -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+.badtitle {
+  width: 400px;
+  padding: 30px;
+  margin: 0 -220px auto;
+  font-family: comic sans;
+  background-color: rgb(255, 115, 0);
+  color: #ff03c0;
+}
+
+.badpicture {
+  border: 10px solid black;
+  padding: 8px;
+  width: 600px;
+  height: 300px;
+  border: solid;
+  border: #ff03c0;
+  aspect-ratio: 4 / 1;
+}
+
+.imagecaption {
+  font-family: papyrus;
+}
+.bad {
+  background-color: #373a40;
+  margin-top: 90px;
+  margin-left: 500px;
+  font-family: "Times New Roman";
+}
+.comicsans {
+  font-family: "Comic Neue", cursive;
+  background-color: white;
+  padding: 20px 430px;
+}
+
+.defaultlink {
+  text-decoration: underline;
+}
+
+.badbullets {
+  margin: 200px;
+  text-align: center;
+}
+
+.badbullets li {
+  list-style: square;
+}
+.badcenter {
+  font-size: xx-large;
+  width: 850px;
+  text-align: center;
+  margin: 0 auto;
+  color: #2d080a;
+  font-family: "Comic Neue", cursive;
+  text-decoration: underline;
+}
+
