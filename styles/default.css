@@ -261,3 +261,29 @@ td {
   text-decoration: underline;
 }
 
+/*
+* css for the web evaluation page -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*/
+
+.web-evaluations {
+  margin-left: 20px;
+}
+.evaluation-name {
+  padding: 15px 0px 15px 0px;
+  text-decoration: underline;
+  
+}
+.evaluation {
+  margin-left: 20px;
+  max-width: 800px;
+}
+.evaluation-bullets {
+  margin-left: 45px;
+  padding: 15px 0px 15px 0px;
+}
+.evaluation-bullets li {
+  padding-top: 15px;
+  list-style: square;
+  max-width: 1200px;
+
+}
