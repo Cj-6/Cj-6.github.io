@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="top">
+    <title>ITIS3135 | Cj Carrier | Civilized Catfish | First JavaScripts</title>
+    <link href="styles/default.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <script src="scripts/defaultscripts.js"></script>
+  </head>
+  <body>
+    <link href="styles/firstJavascripts.css" rel="stylesheet" />
+    <header class="header">
+      <h1 class="inner-header">Cj Carrier's Civilized Catfish</h1>
+    </header>
+    <main>
+      <nav class="nav-container">
+        <a href="index.html" class="nav">Home</a>
+        <a href="tables.html" class="nav">Tables</a>
+        <a href="forms.html" class="nav">Forms</a>
+        <a href="stuff/-=CR4PPyWEBP4GE=-.htm" class="nav">Crappy-Webpage</a>
+        <a href="web_evaluation/web_evaluation.html" class="nav"
+          >Web-Evaluation</a
+        >
+        <a href="firstscripts.html" class="nav">FirstJavascripts</a>
+      </nav>
+      <h2 class="center">Activity #5 - First JavaScripts</h2>
+      <div class="main">
+        <div class="container">
+          <h3 id="time" class="time"></h3>
+          <div class="input-container">
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              class="inputbox"
+              id="name-input"
+            />
+            <input
+              type="text"
+              placeholder="How are you feeling?"
+              name="feeling"
+              class="inputbox"
+              id="feeling-input"
+            />
+            <button onclick="showWelcomeMessage()" class="sButton">
+              Submit
+            </button>
+          </div>
+          <div id="welcome-message" class="welcome-message"></div>
+
+          <div class="button-container">
+            <button class="customButton" onclick="generateCatfish()">
+              Catfish?
+            </button>
+            <button class="customButton" onclick="changeBodyColor(this)">
+              Change Color
+            </button>
+            <button class="customButton" onclick="additionCalculator()">
+              Addition Calculator
+            </button>
+            <button class="customButton" onclick="popUp()">Pop-up</button>
+            <button class="customButton" onclick="playAudio()">
+              Play Sound
+            </button>
+            <audio id="myAudio">
+              <source src="audio/fart.mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+          <div class="generated-container">
+            <div id="generatedcode" class="catfishPicture"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

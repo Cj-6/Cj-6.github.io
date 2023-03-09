@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border-style: none;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  min-width: 500px;
+
+  padding: 15px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.time {
+  color: #000000;
+  font-size: 25px;
+
+  margin: 0 0 40px;
+}
+
+.inputbox {
+  position: relative;
+
+  height: 20px;
+  width: 165px;
+  padding: 15px;
+  margin: 20px 0 0;
+
+  background-color: #404040;
+  border-radius: 4px;
+  color: #c9c9c9;
+}
+.inputbox:hover {
+  background-color: #343434;
+  border-color: #2d2d2d;
+}
+.inputbox::placeholder {
+  color: #c9c9c9; /* set the placeholder text color to black */
+}
+
+/* css for the submit button */
+
+.sButton {
+  height: 50px;
+  margin: 20px 20px 0 0;
+
+  appearance: button;
+  background-color: #404040;
+  border: 1px solid #343434;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 16px;
+  text-align: top;
+}
+.sButton:disabled {
+  opacity: 0.5;
+}
+
+.sButton:focus {
+  outline: 0;
+}
+
+.sButton:hover {
+  background-color: #2d2d2d;
+  border-color: #2d2d2d;
+}
+
+.sButton:active {
+  background-color: #414141;
+  border-color: #414141;
+}
+
+.welcome-message {
+  margin: 40px 30px 30px 0;
+  font-size: 30px;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.inputbox {
+  flex: 1 1 300px;
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.customButton {
+  appearance: button;
+  background-color: #404040;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 10px 15px 0 15px;
+  padding: 12px 16px;
+  text-align: centr;
+}
+
+.customButton:focus {
+  outline: 0;
+}
+
+.customButton:hover {
+  background-color: #2d2d2d;
+}
+
+/* Code for the generated container */
+
+.generated-container {
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+/* code for "catfish?" button*/
+
+.catfishPicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 40px;
+}
+
+.catfish {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 500px;
+  max-height: 500px;
+}
