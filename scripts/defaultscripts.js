@@ -29,7 +29,7 @@ function getTime() {
     Month + "/" + Day + "/" + Year + " " + hour + ":" + minutes + ":" + seconds;
   document.getElementById("time").innerHTML = test;
 }
-setInterval(getTime, 100);
+setInterval(getTime, 1000);
 
 function generateCatfish() {
   var randNum = Math.floor(Math.random() * 7) + 1;
